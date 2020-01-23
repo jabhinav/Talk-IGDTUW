@@ -276,13 +276,13 @@ if __name__ == '__main__':
     # preview_data_augmentation()
 
     # # Method-1: Train a CNN from scratch
-    # train_from_scratch()
+    train_from_scratch()
 
     # # Method-2: Freeze the Convolutional layers and learn only the FC Layers
-    # train_top_model()
+    train_top_model()
 
     # # Method-3: Fine tuning
-    fine_tune()
+    # fine_tune()
 
     print("Time taken: {}".format(round(time.time()-start, 2)))
 
