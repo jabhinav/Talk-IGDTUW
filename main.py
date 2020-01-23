@@ -14,11 +14,7 @@ In our setup, we:
 - created a data/ folder
 - created train/ and validation/ subfolders inside data/
 - created cats/ and dogs/ subfolders inside train/ and validation/
-- put the cat pictures index 0-999 in data/train/cats
-- put the cat pictures index 1000-1400 in data/validation/cats
-- put the dogs pictures index 12500-13499 in data/train/dogs
-- put the dog pictures index 13500-13900 in data/validation/dogs
-So that we have 1000 training examples for each class, and 400 validation examples for each class
+We have 1000 training examples for each class, and 400 validation examples for each class
 """
 
 # For demonstration
@@ -42,8 +38,8 @@ validation_data_dir = 'data/validation'
 
 nb_train_samples = 2000
 nb_validation_samples = 800
-epochs = 50
-batch_size = 16
+epochs = 50 # try other values and probe changes in loss values
+batch_size = 16 # Other values to try: 8, 32 or 64
 
 save_model_train_from_scratch_path = 'first_try.h5'
 top_model_weights_path = 'bottleneck_fc_model.h5'
